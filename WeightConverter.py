@@ -1,7 +1,7 @@
 def weightconverter():
     Quit = False
     while not Quit:
-        weight = int(input("Weight: "))
+        weight = float(input("Weight: "))
         WeightType = input("(K)g or (L)bs: ").lower()
         if WeightType == 'k':
             convertedWeight = weight*2.205
@@ -11,6 +11,7 @@ def weightconverter():
                 Quit = True
             elif userQuit.lower() == 'n':
                 Quit = False
+                print(' ')
             else:
                 print('invalid input')
                 break
@@ -22,6 +23,7 @@ def weightconverter():
                 Quit = True
             elif userQuit.lower() == 'n':
                 Quit = False
+                print(' ')
             else:
                 print('invalid input')
                 break
